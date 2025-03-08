@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+
+{% block title %}Disast app Home{% endblock %}
+
+{% block header %}Welcome to Disast{% endblock %}
+
+{% block content %}
+<div class="main-content">
+    <!-- Weather Forecast Section -->
+    <div class="weather-forecast text-center mb-4">
+        {% if weather %}
+        <h6>Weather Forecast</h6>
+        <div class="d-flex justify-content-center align-items-center">
+            <img src='\static\wind.png' alt="Weather Icon">
+            <div class="ms-3">
+                <h4>{{ weather.city }}</h4>
+                <p>{{ weather.temperature }}°C - {{ weather.description|capfirst }}</p>
+            </div>
+        </div>
+        {% else %}
+        <p>Weather information is currently unavailable.</p>
+        {% endif %}
+        <style>
+            .weather-forecast {
+                background-color: #f1f1f1;
+                padding: 10px;
+                border-radius: 10px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+        
+            .weather-forecast img {
+                width: 80px;
+                height: 80px;
+            }
+        
+            .weather-forecast h4 {
+                margin: 0;
+                font-size: 2rem;
+            }
+            
+            .weather-forecast p {
+                margin: 0;
+                font-size: 1.1rem;
+                color: #555;
+            }
+        </style>
+        
+    </div>
+
+    <!-- Introduction Section -->
+    <div class="text-center mb-5">
+        <h1>Welcome to the Disast</h1>
+        <p>Efficiently manage disasters, coordinate with agencies, and stay informed about the latest developments.</p>
+    </div>
+
+    <!-- Portal Options -->
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Citizen Portal</h5>
+                    <p class="card-text">Sign up as a citizen to stay informed about disasters and participate in relief efforts.</p>
+                    <a href="{% url 'csignup' %}" class="btn btn-primary">Citizen Sign Up</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Agency Portal</h5>
+                    <p class="card-text">Register your agency to manage disaster relief efforts and resources efficiently.</p>
+                    <a href="{% url 'asignup' %}" class="btn btn-primary">Agency Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Recent Disasters Section -->
+    <div class="disaster-posts mt-5">
+        <h2>Recent Disasters</h2>
+        {% if disaster %}
+        <div class="row">
+            {% for disaster in disaster %}
+            <div class="col-md-4">
+                <div class="card disaster-card">
+                    <img src="{{ disaster.image_url|default:'/static/imgs/default-disaster.jpg' }}" alt="Disaster Image" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ disaster.title }}</h5>
+                        <p class="card-text">{{ disaster.description|truncatechars:50 }}</p>
+                        <a href="{{ disaster.link }}" target="_blank" class="btn btn-primary btn-small">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% else %}
+        <p>No recent disasters available.</p>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

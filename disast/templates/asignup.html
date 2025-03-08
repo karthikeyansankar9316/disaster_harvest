@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}
+    Agency Signup
+{% endblock %}
+
+{% block content %}
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+    <div class="signup-container shadow-lg p-4 rounded bg-white" style="max-width: 450px; width: 100%;">
+
+        <h2 class="form-title text-center mb-4">Agency Signup</h2>
+
+        <!-- Form Start -->
+        <form method="post">
+            {% csrf_token %}
+            
+            <!-- Username -->
+            <div class="form-group mb-3">
+                <label for="id_username" class="form-label">Username</label>
+                <input type="text" name="username" id="id_username" class="form-control" value="{{ form.username.value }}">
+                {% if form.username.errors %}
+                    <div class="form-text text-danger">
+                        {% for error in form.username.errors %}
+                            <p>{{ error }}</p>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+
+            <!-- Email -->
+            <div class="form-group mb-3">
+                <label for="id_email" class="form-label">Email address</label>
+                <input type="email" name="email" id="id_email" class="form-control" value="{{ form.email.value }}">
+                {% if form.email.errors %}
+                    <div class="form-text text-danger">
+                        {% for error in form.email.errors %}
+                            <p>{{ error }}</p>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+
+            <!-- Password -->
+            <div class="form-group mb-3">
+                <label for="id_password1" class="form-label">Password</label>
+                <input type="password" name="password1" id="id_password1" class="form-control" value="{{ form.password1.value }}">
+                {% if form.password1.errors %}
+                    <div class="form-text text-danger">
+                        {% for error in form.password1.errors %}
+                            <p>{{ error }}</p>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+
+            <!-- Password Confirmation -->
+            <div class="form-group mb-3">
+                <label for="id_password2" class="form-label">Password confirmation</label>
+                <input type="password" name="password2" id="id_password2" class="form-control" value="{{ form.password2.value }}">
+                {% if form.password2.errors %}
+                    <div class="form-text text-danger">
+                        {% for error in form.password2.errors %}
+                            <p>{{ error }}</p>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+
+            <!-- Agency Name -->
+            <div class="form-group mb-3">
+                <label for="id_agency_name" class="form-label">Agency name</label>
+                <input type="text" name="agency_name" id="id_agency_name" class="form-control" value="{{ form.agency_name.value }}">
+                {% if form.agency_name.errors %}
+                    <div class="form-text text-danger">
+                        {% for error in form.agency_name.errors %}
+                            <p>{{ error }}</p>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary mt-3 w-100">Sign Up</button>
+        </form>
+
+        <!-- Display Messages -->
+        {% if messages %}
+        <div class="mt-3">
+            <ul class="alert alert-info p-3">
+                {% for message in messages %}
+                <li>{{ message }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+
+    </div>
+</div>
+{% endblock %}

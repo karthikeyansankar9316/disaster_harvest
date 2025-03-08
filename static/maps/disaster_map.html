@@ -1,0 +1,2210 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1adbae0061dcdb75f2fe4a69f3df22a4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1adbae0061dcdb75f2fe4a69f3df22a4" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1adbae0061dcdb75f2fe4a69f3df22a4 = L.map(
+                "map_1adbae0061dcdb75f2fe4a69f3df22a4",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_482f9b8c74257faf1334f67ee6b8ad48 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_482f9b8c74257faf1334f67ee6b8ad48.addTo(map_1adbae0061dcdb75f2fe4a69f3df22a4);
+        
+    
+            var marker_0af0be91e7945954106384f722e88777 = L.marker(
+                [14.0849, 96.6721],
+                {
+}
+            ).addTo(map_1adbae0061dcdb75f2fe4a69f3df22a4);
+        
+    
+            var icon_c588446ffda156ddac549d79337272bf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0af0be91e7945954106384f722e88777.setIcon(icon_c588446ffda156ddac549d79337272bf);
+        
+    
+        var popup_41fed5ebac2fff019e5ccd28520cd1af = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0154adb440e579d053803cf0227b980e = $(`<div id="html_0154adb440e579d053803cf0227b980e" style="width: 100.0%; height: 100.0%;">floood (flood)</div>`)[0];
+                popup_41fed5ebac2fff019e5ccd28520cd1af.setContent(html_0154adb440e579d053803cf0227b980e);
+            
+        
+
+        marker_0af0be91e7945954106384f722e88777.bindPopup(popup_41fed5ebac2fff019e5ccd28520cd1af)
+        ;
+
+        
+    
+    
+            var marker_035db4502bc5e74963a1be048fc326c8 = L.marker(
+                [-70.5744, -95.7605],
+                {
+}
+            ).addTo(map_1adbae0061dcdb75f2fe4a69f3df22a4);
+        
+    
+            var icon_de75413bc82a53e264d713ae7283be05 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_035db4502bc5e74963a1be048fc326c8.setIcon(icon_de75413bc82a53e264d713ae7283be05);
+        
+    
+        var popup_acd063cabd8ca554873dfc91b5a16d82 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_31b065208477ea92b1bc9c15ee8de12a = $(`<div id="html_31b065208477ea92b1bc9c15ee8de12a" style="width: 100.0%; height: 100.0%;">Tropical cyclone dikeledi - jan 2025 (cyclone)</div>`)[0];
+                popup_acd063cabd8ca554873dfc91b5a16d82.setContent(html_31b065208477ea92b1bc9c15ee8de12a);
+            
+        
+
+        marker_035db4502bc5e74963a1be048fc326c8.bindPopup(popup_acd063cabd8ca554873dfc91b5a16d82)
+        ;
+
+        
+    
+    
+            var marker_bdc104ea18ae9ab5118cb741bb1dc98b = L.marker(
+                [62.3221, 10.5023],
+                {
+}
+            ).addTo(map_1adbae0061dcdb75f2fe4a69f3df22a4);
+        
+    
+            var icon_7c153577f9203192cf2e48baa84081b7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_bdc104ea18ae9ab5118cb741bb1dc98b.setIcon(icon_7c153577f9203192cf2e48baa84081b7);
+        
+    
+        var popup_a2a015448a26c7137ae5e5119c4d1c5e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_30f79ca469ee3c73b4e58654352bcdb5 = $(`<div id="html_30f79ca469ee3c73b4e58654352bcdb5" style="width: 100.0%; height: 100.0%;">Angola: cholera outbreak - jan 2025 (outbreak)</div>`)[0];
+                popup_a2a015448a26c7137ae5e5119c4d1c5e.setContent(html_30f79ca469ee3c73b4e58654352bcdb5);
+            
+        
+
+        marker_bdc104ea18ae9ab5118cb741bb1dc98b.bindPopup(popup_a2a015448a26c7137ae5e5119c4d1c5e)
+        ;
+
+        
+    
+    
+            var marker_4a995a9edc74576e6e6dc326162d9793 = L.marker(
+                [-70.7106, 161.387],
+                {
+}
+            ).addTo(map_1adbae0061dcdb75f2fe4a69f3df22a4);
+        
+    
+            var icon_e5f8f7d7d2ebff5262c63bdb22af8049 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_4a995a9edc74576e6e6dc326162d9793.setIcon(icon_e5f8f7d7d2ebff5262c63bdb22af8049);
+        
+    
+        var popup_628fbd9f93495224c0d31a9b18c0d25c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b1895a77077b441d04edccae2016e19b = $(`<div id="html_b1895a77077b441d04edccae2016e19b" style="width: 100.0%; height: 100.0%;">Ethiopia: earthquakes - jan 2025 (earthquake)</div>`)[0];
+                popup_628fbd9f93495224c0d31a9b18c0d25c.setContent(html_b1895a77077b441d04edccae2016e19b);
+            
+        
+
+        marker_4a995a9edc74576e6e6dc326162d9793.bindPopup(popup_628fbd9f93495224c0d31a9b18c0d25c)
+        ;
+
+        
+    
+    
+            var marker_8dbc638450d6e57912714a5d52c8364f = L.marker(
+                [-14.4001, -88.1629],
+                {
+}
+            ).addTo(map_1adbae0061dcdb75f2fe4a69f3df22a4);
+        
+    
+            var icon_b158aeb408bfdf16cf5999ba29359872 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_8dbc638450d6e57912714a5d52c8364f.setIcon(icon_b158aeb408bfdf16cf5999ba29359872);
+        
+    
+        var popup_84ed5d3beb2046a65c0ca8d4eaa20fd8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2807dda6755209ae24f25bfdde4a30f1 = $(`<div id="html_2807dda6755209ae24f25bfdde4a30f1" style="width: 100.0%; height: 100.0%;">Vanuatu: earthquake - dec 2024 (earthquake)</div>`)[0];
+                popup_84ed5d3beb2046a65c0ca8d4eaa20fd8.setContent(html_2807dda6755209ae24f25bfdde4a30f1);
+            
+        
+
+        marker_8dbc638450d6e57912714a5d52c8364f.bindPopup(popup_84ed5d3beb2046a65c0ca8d4eaa20fd8)
+        ;
+
+        
+    
+    
+            var marker_4d1dbcdb80e790175f269a0298a3a457 = L.marker(
+                [-87.2069, -67.5802],
+                {
+}
+            ).addTo(map_1adbae0061dcdb75f2fe4a69f3df22a4);
+        
+    
+            var icon_54e0a9162d484eb79c855a7c26083021 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_4d1dbcdb80e790175f269a0298a3a457.setIcon(icon_54e0a9162d484eb79c855a7c26083021);
+        
+    
+        var popup_b2a6846a43f2ea8c914f3d305b16fdac = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_70b9ed930d1642743efac045c6bdcd33 = $(`<div id="html_70b9ed930d1642743efac045c6bdcd33" style="width: 100.0%; height: 100.0%;">Tropical cyclone chido - dec 2024 (cyclone)</div>`)[0];
+                popup_b2a6846a43f2ea8c914f3d305b16fdac.setContent(html_70b9ed930d1642743efac045c6bdcd33);
+            
+        
+
+        marker_4d1dbcdb80e790175f269a0298a3a457.bindPopup(popup_b2a6846a43f2ea8c914f3d305b16fdac)
+        ;
+
+        
+    
+    
+            var marker_eaaba0da526515dd087c1de34dcac958 = L.marker(
+                [2.67016, 49.4422],
+                {
+}
+            ).addTo(map_1adbae0061dcdb75f2fe4a69f3df22a4);
+        
+    
+            var icon_09effc81b8c4d0c5df0bb31b96d110d4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_eaaba0da526515dd087c1de34dcac958.setIcon(icon_09effc81b8c4d0c5df0bb31b96d110d4);
+        
+    
+        var popup_0342297a7fd0c91352218806661b5324 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f3e850b033375d0564f5cb45c7b7eb6b = $(`<div id="html_f3e850b033375d0564f5cb45c7b7eb6b" style="width: 100.0%; height: 100.0%;">Philippines: kanlaon volcano - dec 2024 (volcano)</div>`)[0];
+                popup_0342297a7fd0c91352218806661b5324.setContent(html_f3e850b033375d0564f5cb45c7b7eb6b);
+            
+        
+
+        marker_eaaba0da526515dd087c1de34dcac958.bindPopup(popup_0342297a7fd0c91352218806661b5324)
+        ;
+
+        
+    
+    
+            var marker_08f18eb481bceaecd50046853d75ef60 = L.marker(
+                [25.5951, -72.3758],
+                {
+}
+            ).addTo(map_1adbae0061dcdb75f2fe4a69f3df22a4);
+        
+    
+            var icon_de878d568228f383d8c75dad520ffd82 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_08f18eb481bceaecd50046853d75ef60.setIcon(icon_de878d568228f383d8c75dad520ffd82);
+        
+    
+        var popup_be7b05e4d82f3234e1caf6ae09e9eaee = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_37f4c6011a1a8ae8e2a6fb8405284b02 = $(`<div id="html_37f4c6011a1a8ae8e2a6fb8405284b02" style="width: 100.0%; height: 100.0%;">Libya: floods - dec 2024 (flood)</div>`)[0];
+                popup_be7b05e4d82f3234e1caf6ae09e9eaee.setContent(html_37f4c6011a1a8ae8e2a6fb8405284b02);
+            
+        
+
+        marker_08f18eb481bceaecd50046853d75ef60.bindPopup(popup_be7b05e4d82f3234e1caf6ae09e9eaee)
+        ;
+
+        
+    
+    
+            var marker_d6a300c1dca8ad624299db71d69baa28 = L.marker(
+                [12.2753, 159.88],
+                {
+}
+            ).addTo(map_1adbae0061dcdb75f2fe4a69f3df22a4);
+        
+    
+            var icon_baa972c5c3d1b7e5cbfa0443b69bddc5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d6a300c1dca8ad624299db71d69baa28.setIcon(icon_baa972c5c3d1b7e5cbfa0443b69bddc5);
+        
+    
+        var popup_ed4fee13e4bbf102295fa4747cdae757 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f06d92a645b0cd16a0a490675cc22bd3 = $(`<div id="html_f06d92a645b0cd16a0a490675cc22bd3" style="width: 100.0%; height: 100.0%;">Tropical cyclone fengal - nov 2024 (cyclone)</div>`)[0];
+                popup_ed4fee13e4bbf102295fa4747cdae757.setContent(html_f06d92a645b0cd16a0a490675cc22bd3);
+            
+        
+
+        marker_d6a300c1dca8ad624299db71d69baa28.bindPopup(popup_ed4fee13e4bbf102295fa4747cdae757)
+        ;
+
+        
+    
+    
+            var marker_36bb9f7359381a376c826c3e9d7a0379 = L.marker(
+                [-87.1252, -90.8929],
+                {
+}
+            ).addTo(map_1adbae0061dcdb75f2fe4a69f3df22a4);
+        
+    
+            var icon_5a426f28cf61650a943bd3cfbc12c5f8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_36bb9f7359381a376c826c3e9d7a0379.setIcon(icon_5a426f28cf61650a943bd3cfbc12c5f8);
+        
+    
+        var popup_4a21a65298d349efde571ca5b1652ddc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8f73df488ea1788c08579da341da9fa3 = $(`<div id="html_8f73df488ea1788c08579da341da9fa3" style="width: 100.0%; height: 100.0%;">Malaysia: floods - nov 2024 (flood)</div>`)[0];
+                popup_4a21a65298d349efde571ca5b1652ddc.setContent(html_8f73df488ea1788c08579da341da9fa3);
+            
+        
+
+        marker_36bb9f7359381a376c826c3e9d7a0379.bindPopup(popup_4a21a65298d349efde571ca5b1652ddc)
+        ;
+
+        
+    
+    
+            var marker_8787ea161ca98f5365d6633aded69dd7 = L.marker(
+                [-55.8566, -105.887],
+                {
+}
+            ).addTo(map_1adbae0061dcdb75f2fe4a69f3df22a4);
+        
+    
+            var icon_1eff334cc5c7105cb713bbf85d7c056c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_8787ea161ca98f5365d6633aded69dd7.setIcon(icon_1eff334cc5c7105cb713bbf85d7c056c);
+        
+    
+        var popup_f2b4fffa3485633789a7e490c4802f46 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_655507b4369e20e34e7c68452a78f886 = $(`<div id="html_655507b4369e20e34e7c68452a78f886" style="width: 100.0%; height: 100.0%;">Gabon: floods - nov 2024 (flood)</div>`)[0];
+                popup_f2b4fffa3485633789a7e490c4802f46.setContent(html_655507b4369e20e34e7c68452a78f886);
+            
+        
+
+        marker_8787ea161ca98f5365d6633aded69dd7.bindPopup(popup_f2b4fffa3485633789a7e490c4802f46)
+        ;
+
+        
+    
+    
+            var marker_be8eadf148bfb17bbe27491db5010a30 = L.marker(
+                [-7.14863, 66.1758],
+                {
+}
+            ).addTo(map_1adbae0061dcdb75f2fe4a69f3df22a4);
+        
+    
+            var icon_294df40bd7fc42fdd22ca846d640d639 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_be8eadf148bfb17bbe27491db5010a30.setIcon(icon_294df40bd7fc42fdd22ca846d640d639);
+        
+    
+        var popup_407bcae7f106ff31db2021aa4962a758 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5ce90e0c311df6df8e0f62c23fba7f86 = $(`<div id="html_5ce90e0c311df6df8e0f62c23fba7f86" style="width: 100.0%; height: 100.0%;">Dominican republic: floods - nov 2024 (flood)</div>`)[0];
+                popup_407bcae7f106ff31db2021aa4962a758.setContent(html_5ce90e0c311df6df8e0f62c23fba7f86);
+            
+        
+
+        marker_be8eadf148bfb17bbe27491db5010a30.bindPopup(popup_407bcae7f106ff31db2021aa4962a758)
+        ;
+
+        
+    
+    
+            var marker_4052ebafcb93b4882155e5bfab581cce = L.marker(
+                [-83.1145, -129.673],
+                {
+}
+            ).addTo(map_1adbae0061dcdb75f2fe4a69f3df22a4);
+        
+    
+            var icon_b67840589f27eb3b0d25b24d44a27f2b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_4052ebafcb93b4882155e5bfab581cce.setIcon(icon_b67840589f27eb3b0d25b24d44a27f2b);
+        
+    
+        var popup_cd3573bf943c2452b7bc564a06ebfa19 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_56899e91093eafb3cba9e388cc86bff3 = $(`<div id="html_56899e91093eafb3cba9e388cc86bff3" style="width: 100.0%; height: 100.0%;">Tropical storm sara - nov 2024 (storm)</div>`)[0];
+                popup_cd3573bf943c2452b7bc564a06ebfa19.setContent(html_56899e91093eafb3cba9e388cc86bff3);
+            
+        
+
+        marker_4052ebafcb93b4882155e5bfab581cce.bindPopup(popup_cd3573bf943c2452b7bc564a06ebfa19)
+        ;
+
+        
+    
+    
+            var marker_24144d1949a67a3b0134015432fabd88 = L.marker(
+                [15.1617, 0.635512],
+                {
+}
+            ).addTo(map_1adbae0061dcdb75f2fe4a69f3df22a4);
+        
+    
+            var icon_5aa173a01b833fcf4bfb172c757a96b9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_24144d1949a67a3b0134015432fabd88.setIcon(icon_5aa173a01b833fcf4bfb172c757a96b9);
+        
+    
+        var popup_a0992e0bd9c342cd50e60835835378cf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_78b8c91a7746c8d770edd4b8dbdf252c = $(`<div id="html_78b8c91a7746c8d770edd4b8dbdf252c" style="width: 100.0%; height: 100.0%;">Cuba: earthquakes - nov 2024 (earthquake)</div>`)[0];
+                popup_a0992e0bd9c342cd50e60835835378cf.setContent(html_78b8c91a7746c8d770edd4b8dbdf252c);
+            
+        
+
+        marker_24144d1949a67a3b0134015432fabd88.bindPopup(popup_a0992e0bd9c342cd50e60835835378cf)
+        ;
+
+        
+    
+    
+            var marker_5e742e270dbd8735df2a71d2b65fd6bf = L.marker(
+                [46.1036, -80.8705],
+                {
+}
+            ).addTo(map_1adbae0061dcdb75f2fe4a69f3df22a4);
+        
+    
+            var icon_4f89c7245ba6edc8267e1b10d7ecc58c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_5e742e270dbd8735df2a71d2b65fd6bf.setIcon(icon_4f89c7245ba6edc8267e1b10d7ecc58c);
+        
+    
+        var popup_5c6446123ae2915951ea5cf9d08ca995 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2291aaedebefe45dbaa529fe90562bec = $(`<div id="html_2291aaedebefe45dbaa529fe90562bec" style="width: 100.0%; height: 100.0%;">Haiti: floods - nov 2024 (flood)</div>`)[0];
+                popup_5c6446123ae2915951ea5cf9d08ca995.setContent(html_2291aaedebefe45dbaa529fe90562bec);
+            
+        
+
+        marker_5e742e270dbd8735df2a71d2b65fd6bf.bindPopup(popup_5c6446123ae2915951ea5cf9d08ca995)
+        ;
+
+        
+    
+    
+            var marker_0236a5b7f304b38bcec9a049574f31ce = L.marker(
+                [-70.4869, 77.7419],
+                {
+}
+            ).addTo(map_1adbae0061dcdb75f2fe4a69f3df22a4);
+        
+    
+            var icon_8d50a56d81b50d361f752ad32ddb10f0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0236a5b7f304b38bcec9a049574f31ce.setIcon(icon_8d50a56d81b50d361f752ad32ddb10f0);
+        
+    
+        var popup_b6b7b4b7289ecdfe6a79d730a8ce651c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f205c0bf691c0244cd9c048da4b753d7 = $(`<div id="html_f205c0bf691c0244cd9c048da4b753d7" style="width: 100.0%; height: 100.0%;">Colombia: floods - nov 2024 (flood)</div>`)[0];
+                popup_b6b7b4b7289ecdfe6a79d730a8ce651c.setContent(html_f205c0bf691c0244cd9c048da4b753d7);
+            
+        
+
+        marker_0236a5b7f304b38bcec9a049574f31ce.bindPopup(popup_b6b7b4b7289ecdfe6a79d730a8ce651c)
+        ;
+
+        
+    
+    
+            var marker_ce612f41e38a3fefc4c4ff14836044d6 = L.marker(
+                [-44.1844, -135.07],
+                {
+}
+            ).addTo(map_1adbae0061dcdb75f2fe4a69f3df22a4);
+        
+    
+            var icon_709232bf940153cd95116cc390e2e6b5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ce612f41e38a3fefc4c4ff14836044d6.setIcon(icon_709232bf940153cd95116cc390e2e6b5);
+        
+    
+        var popup_695b7506dbb29d0d4ea41f8154fbce21 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aea860495e88cad55ff17308425ee067 = $(`<div id="html_aea860495e88cad55ff17308425ee067" style="width: 100.0%; height: 100.0%;">Costa rica: floods - nov 2024 (flood)</div>`)[0];
+                popup_695b7506dbb29d0d4ea41f8154fbce21.setContent(html_aea860495e88cad55ff17308425ee067);
+            
+        
+
+        marker_ce612f41e38a3fefc4c4ff14836044d6.bindPopup(popup_695b7506dbb29d0d4ea41f8154fbce21)
+        ;
+
+        
+    
+    
+            var marker_70e91964cb274be19bf6c91962a3ccce = L.marker(
+                [64.8791, 154.0],
+                {
+}
+            ).addTo(map_1adbae0061dcdb75f2fe4a69f3df22a4);
+        
+    
+            var icon_176e1cebbdb477f5af570fc4a49c07a3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_70e91964cb274be19bf6c91962a3ccce.setIcon(icon_176e1cebbdb477f5af570fc4a49c07a3);
+        
+    
+        var popup_f05e049629bb1cea7c747ff3b83fbaa4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5ee3faaa80dfc2e08ea75077561aa89e = $(`<div id="html_5ee3faaa80dfc2e08ea75077561aa89e" style="width: 100.0%; height: 100.0%;">Panama: floods - nov 2024 (flood)</div>`)[0];
+                popup_f05e049629bb1cea7c747ff3b83fbaa4.setContent(html_5ee3faaa80dfc2e08ea75077561aa89e);
+            
+        
+
+        marker_70e91964cb274be19bf6c91962a3ccce.bindPopup(popup_f05e049629bb1cea7c747ff3b83fbaa4)
+        ;
+
+        
+    
+    
+            var marker_8f0311fff4d2b3aa0fb13802f2e6d8da = L.marker(
+                [-79.638, 1.62129],
+                {
+}
+            ).addTo(map_1adbae0061dcdb75f2fe4a69f3df22a4);
+        
+    
+            var icon_79a31f09c84e579b1ed2b90b1e9e4382 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_8f0311fff4d2b3aa0fb13802f2e6d8da.setIcon(icon_79a31f09c84e579b1ed2b90b1e9e4382);
+        
+    
+        var popup_e2d4ee20dfbd3e1849571d67a18a77b8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_94a6e91dde703713f99f7f474203dd23 = $(`<div id="html_94a6e91dde703713f99f7f474203dd23" style="width: 100.0%; height: 100.0%;">Syria: wild fires - oct 2024 (Unknown)</div>`)[0];
+                popup_e2d4ee20dfbd3e1849571d67a18a77b8.setContent(html_94a6e91dde703713f99f7f474203dd23);
+            
+        
+
+        marker_8f0311fff4d2b3aa0fb13802f2e6d8da.bindPopup(popup_e2d4ee20dfbd3e1849571d67a18a77b8)
+        ;
+
+        
+    
+    
+            var marker_b598edd00fd033de7e350070b148c4a6 = L.marker(
+                [-27.0329, -95.1926],
+                {
+}
+            ).addTo(map_1adbae0061dcdb75f2fe4a69f3df22a4);
+        
+    
+            var icon_195286ac00177aaaf985e13be5c59b42 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_b598edd00fd033de7e350070b148c4a6.setIcon(icon_195286ac00177aaaf985e13be5c59b42);
+        
+    
+        var popup_592878253e968d75a503d97741f12fb4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_75302abfd4a5d5f0fb19bdc929f8470e = $(`<div id="html_75302abfd4a5d5f0fb19bdc929f8470e" style="width: 100.0%; height: 100.0%;">South sudan: cholera outbreak - oct 2024 (outbreak)</div>`)[0];
+                popup_592878253e968d75a503d97741f12fb4.setContent(html_75302abfd4a5d5f0fb19bdc929f8470e);
+            
+        
+
+        marker_b598edd00fd033de7e350070b148c4a6.bindPopup(popup_592878253e968d75a503d97741f12fb4)
+        ;
+
+        
+    
+    
+            var marker_73f240b2c9cf28440bdbf80e43c50789 = L.marker(
+                [-66.883, 156.748],
+                {
+}
+            ).addTo(map_1adbae0061dcdb75f2fe4a69f3df22a4);
+        
+    
+            var icon_5726f2683c66ce622b863b366d373827 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_73f240b2c9cf28440bdbf80e43c50789.setIcon(icon_5726f2683c66ce622b863b366d373827);
+        
+    
+        var popup_cf9148971c53698f9c917b3e62daca41 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b3cab1b0737b7092f8bde23ead20795b = $(`<div id="html_b3cab1b0737b7092f8bde23ead20795b" style="width: 100.0%; height: 100.0%;">Typhoon kong-rey - oct 2024 (cyclone)</div>`)[0];
+                popup_cf9148971c53698f9c917b3e62daca41.setContent(html_b3cab1b0737b7092f8bde23ead20795b);
+            
+        
+
+        marker_73f240b2c9cf28440bdbf80e43c50789.bindPopup(popup_cf9148971c53698f9c917b3e62daca41)
+        ;
+
+        
+    
+    
+            var marker_115f63f4d664dddd39383a6ada8efb67 = L.marker(
+                [-37.4806, 54.9491],
+                {
+}
+            ).addTo(map_1adbae0061dcdb75f2fe4a69f3df22a4);
+        
+    
+            var icon_1ba174080ee02b7c5fea80b5dcb85130 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_115f63f4d664dddd39383a6ada8efb67.setIcon(icon_1ba174080ee02b7c5fea80b5dcb85130);
+        
+    
+        var popup_53c11dfb2ac6d7d65db73959c277c566 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2da9a20cc482c86ac16db1952051d62f = $(`<div id="html_2da9a20cc482c86ac16db1952051d62f" style="width: 100.0%; height: 100.0%;">Senegal: floods - oct 2024 (flood)</div>`)[0];
+                popup_53c11dfb2ac6d7d65db73959c277c566.setContent(html_2da9a20cc482c86ac16db1952051d62f);
+            
+        
+
+        marker_115f63f4d664dddd39383a6ada8efb67.bindPopup(popup_53c11dfb2ac6d7d65db73959c277c566)
+        ;
+
+        
+    
+    
+            var marker_0d27032f6a95429f3d5b9e8948280181 = L.marker(
+                [-20.1853, 173.3],
+                {
+}
+            ).addTo(map_1adbae0061dcdb75f2fe4a69f3df22a4);
+        
+    
+            var icon_e899449ab50532004151472087557c2a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0d27032f6a95429f3d5b9e8948280181.setIcon(icon_e899449ab50532004151472087557c2a);
+        
+    
+        var popup_c6acb8a029da875f62776b75fcae8027 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c30a00e99c2a48ef8c811eb8ff87189b = $(`<div id="html_c30a00e99c2a48ef8c811eb8ff87189b" style="width: 100.0%; height: 100.0%;">Ghana: cholera outbreak - oct 2024 (outbreak)</div>`)[0];
+                popup_c6acb8a029da875f62776b75fcae8027.setContent(html_c30a00e99c2a48ef8c811eb8ff87189b);
+            
+        
+
+        marker_0d27032f6a95429f3d5b9e8948280181.bindPopup(popup_c6acb8a029da875f62776b75fcae8027)
+        ;
+
+        
+    
+    
+            var marker_4eea0c2bc4b4458e1515d0b204b3998d = L.marker(
+                [43.8058, 98.1583],
+                {
+}
+            ).addTo(map_1adbae0061dcdb75f2fe4a69f3df22a4);
+        
+    
+            var icon_be34dca738f55d9c0ec7b55223e493f7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_4eea0c2bc4b4458e1515d0b204b3998d.setIcon(icon_be34dca738f55d9c0ec7b55223e493f7);
+        
+    
+        var popup_50d3c62ce522f21ef7f78707d1f06f37 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_65e85cf8002a8b95eac31077e566f3a4 = $(`<div id="html_65e85cf8002a8b95eac31077e566f3a4" style="width: 100.0%; height: 100.0%;">Algeria: malaria and diphtheria outbreaks - oct 2024 (outbreak)</div>`)[0];
+                popup_50d3c62ce522f21ef7f78707d1f06f37.setContent(html_65e85cf8002a8b95eac31077e566f3a4);
+            
+        
+
+        marker_4eea0c2bc4b4458e1515d0b204b3998d.bindPopup(popup_50d3c62ce522f21ef7f78707d1f06f37)
+        ;
+
+        
+    
+    
+            var marker_54a20e680de9fafa85a58093b6c5122a = L.marker(
+                [23.9783, 125.308],
+                {
+}
+            ).addTo(map_1adbae0061dcdb75f2fe4a69f3df22a4);
+        
+    
+            var icon_bde2b4341f5d830fa2a4613ad541f8bf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_54a20e680de9fafa85a58093b6c5122a.setIcon(icon_bde2b4341f5d830fa2a4613ad541f8bf);
+        
+    
+        var popup_0f813b05a4895d9623c40d78920a6565 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2bdcb43f5a7260a86e4ba1f1c7e6a67d = $(`<div id="html_2bdcb43f5a7260a86e4ba1f1c7e6a67d" style="width: 100.0%; height: 100.0%;">Nepal: floods and landslides - sep 2024 (flood)</div>`)[0];
+                popup_0f813b05a4895d9623c40d78920a6565.setContent(html_2bdcb43f5a7260a86e4ba1f1c7e6a67d);
+            
+        
+
+        marker_54a20e680de9fafa85a58093b6c5122a.bindPopup(popup_0f813b05a4895d9623c40d78920a6565)
+        ;
+
+        
+    
+    
+            var marker_73096548d391bfe8905f228a54b0fd04 = L.marker(
+                [-28.6651, -122.575],
+                {
+}
+            ).addTo(map_1adbae0061dcdb75f2fe4a69f3df22a4);
+        
+    
+            var icon_ae60b6c186cbf1753b3475e90b35d141 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_73096548d391bfe8905f228a54b0fd04.setIcon(icon_ae60b6c186cbf1753b3475e90b35d141);
+        
+    
+        var popup_e79089f21e3ae19541f557b41e2a0612 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ee79c38477df20084530cd2facdd27e7 = $(`<div id="html_ee79c38477df20084530cd2facdd27e7" style="width: 100.0%; height: 100.0%;">Sierra leone: floods - sep 2024 (flood)</div>`)[0];
+                popup_e79089f21e3ae19541f557b41e2a0612.setContent(html_ee79c38477df20084530cd2facdd27e7);
+            
+        
+
+        marker_73096548d391bfe8905f228a54b0fd04.bindPopup(popup_e79089f21e3ae19541f557b41e2a0612)
+        ;
+
+        
+    
+    
+            var marker_5aec502f00a82ddfe143b89f8c3416e0 = L.marker(
+                [49.5589, -36.6873],
+                {
+}
+            ).addTo(map_1adbae0061dcdb75f2fe4a69f3df22a4);
+        
+    
+            var icon_9051c37024ce2776ebfc9b92413b347f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_5aec502f00a82ddfe143b89f8c3416e0.setIcon(icon_9051c37024ce2776ebfc9b92413b347f);
+        
+    
+        var popup_e3d91803e2dc69c50ec7090f05611272 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_db8471467be1f0c173c0fa0c98ccae8a = $(`<div id="html_db8471467be1f0c173c0fa0c98ccae8a" style="width: 100.0%; height: 100.0%;">Central europe: floods - sep 2024 (flood)</div>`)[0];
+                popup_e3d91803e2dc69c50ec7090f05611272.setContent(html_db8471467be1f0c173c0fa0c98ccae8a);
+            
+        
+
+        marker_5aec502f00a82ddfe143b89f8c3416e0.bindPopup(popup_e3d91803e2dc69c50ec7090f05611272)
+        ;
+
+        
+    
+    
+            var marker_b3b7ab367199af2fdbf03412a33ba57f = L.marker(
+                [29.6051, -133.887],
+                {
+}
+            ).addTo(map_1adbae0061dcdb75f2fe4a69f3df22a4);
+        
+    
+            var icon_76ed29d887e89c9b774819c7c64be98b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_b3b7ab367199af2fdbf03412a33ba57f.setIcon(icon_76ed29d887e89c9b774819c7c64be98b);
+        
+    
+        var popup_607e973c839543a63460a80767e36ad6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_11e6b05f6680d53efcf1fa576a670060 = $(`<div id="html_11e6b05f6680d53efcf1fa576a670060" style="width: 100.0%; height: 100.0%;">Kenya: polio outbreak - sep 2024 (outbreak)</div>`)[0];
+                popup_607e973c839543a63460a80767e36ad6.setContent(html_11e6b05f6680d53efcf1fa576a670060);
+            
+        
+
+        marker_b3b7ab367199af2fdbf03412a33ba57f.bindPopup(popup_607e973c839543a63460a80767e36ad6)
+        ;
+
+        
+    
+    
+            var marker_3a7fbaf5e6a3f1af38e7b38850af6ab3 = L.marker(
+                [26.4671, 126.332],
+                {
+}
+            ).addTo(map_1adbae0061dcdb75f2fe4a69f3df22a4);
+        
+    
+            var icon_cd417f18a1e1860f6e52e666321351ee = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_3a7fbaf5e6a3f1af38e7b38850af6ab3.setIcon(icon_cd417f18a1e1860f6e52e666321351ee);
+        
+    
+        var popup_fe42cebe79cfc8c6e955f2c31ae2f456 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6db7540c6158e7370f69a15fc597e091 = $(`<div id="html_6db7540c6158e7370f69a15fc597e091" style="width: 100.0%; height: 100.0%;">Typhoon yagi - sep 2024 (cyclone)</div>`)[0];
+                popup_fe42cebe79cfc8c6e955f2c31ae2f456.setContent(html_6db7540c6158e7370f69a15fc597e091);
+            
+        
+
+        marker_3a7fbaf5e6a3f1af38e7b38850af6ab3.bindPopup(popup_fe42cebe79cfc8c6e955f2c31ae2f456)
+        ;
+
+        
+    
+    
+            var marker_a41e7da3426900cf380a33d4b57c5f48 = L.marker(
+                [-33.5708, -174.704],
+                {
+}
+            ).addTo(map_1adbae0061dcdb75f2fe4a69f3df22a4);
+        
+    
+            var icon_df054751cdf014f09b99d2c9baf8bcc3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a41e7da3426900cf380a33d4b57c5f48.setIcon(icon_df054751cdf014f09b99d2c9baf8bcc3);
+        
+    
+        var popup_8a8f55a6972bad4fcf7ea34143a17f85 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a2f65287774c5a337916c22f7735607b = $(`<div id="html_a2f65287774c5a337916c22f7735607b" style="width: 100.0%; height: 100.0%;">Cameroon: floods - aug 2024 (flood)</div>`)[0];
+                popup_8a8f55a6972bad4fcf7ea34143a17f85.setContent(html_a2f65287774c5a337916c22f7735607b);
+            
+        
+
+        marker_a41e7da3426900cf380a33d4b57c5f48.bindPopup(popup_8a8f55a6972bad4fcf7ea34143a17f85)
+        ;
+
+        
+    
+    
+            var marker_af5cb26107cbd1c6f306c9a8c008d880 = L.marker(
+                [-66.0485, 43.6278],
+                {
+}
+            ).addTo(map_1adbae0061dcdb75f2fe4a69f3df22a4);
+        
+    
+            var icon_f7da7868e7fafddc33cf8baa6c6bf5ae = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_af5cb26107cbd1c6f306c9a8c008d880.setIcon(icon_f7da7868e7fafddc33cf8baa6c6bf5ae);
+        
+    
+        var popup_8bd533ce48e86470125fad62aed89ba2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cf8b597fb977d242c8ea0435dfcaa2b9 = $(`<div id="html_cf8b597fb977d242c8ea0435dfcaa2b9" style="width: 100.0%; height: 100.0%;">Nigeria: floods - aug 2024 (flood)</div>`)[0];
+                popup_8bd533ce48e86470125fad62aed89ba2.setContent(html_cf8b597fb977d242c8ea0435dfcaa2b9);
+            
+        
+
+        marker_af5cb26107cbd1c6f306c9a8c008d880.bindPopup(popup_8bd533ce48e86470125fad62aed89ba2)
+        ;
+
+        
+    
+    
+            var marker_0eb51bc4db490e8bb68462225b0f011e = L.marker(
+                [37.2151, 61.2675],
+                {
+}
+            ).addTo(map_1adbae0061dcdb75f2fe4a69f3df22a4);
+        
+    
+            var icon_b549a945cc18235c72e7d1b81b185c4d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_0eb51bc4db490e8bb68462225b0f011e.setIcon(icon_b549a945cc18235c72e7d1b81b185c4d);
+        
+    
+        var popup_094d8c3f7b20aa83c91e857a733c4ac8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7b89047b60cb959c982c1529c08b7e39 = $(`<div id="html_7b89047b60cb959c982c1529c08b7e39" style="width: 100.0%; height: 100.0%;">Burundi: mpox outbreak - aug 2024 (outbreak)</div>`)[0];
+                popup_094d8c3f7b20aa83c91e857a733c4ac8.setContent(html_7b89047b60cb959c982c1529c08b7e39);
+            
+        
+
+        marker_0eb51bc4db490e8bb68462225b0f011e.bindPopup(popup_094d8c3f7b20aa83c91e857a733c4ac8)
+        ;
+
+        
+    
+    
+            var marker_94ab2fb55b2d7464b2d854bdec61dcec = L.marker(
+                [-48.4764, -128.567],
+                {
+}
+            ).addTo(map_1adbae0061dcdb75f2fe4a69f3df22a4);
+        
+    
+            var icon_bd14b5a80475f70d674e1de10dd8a3e3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_94ab2fb55b2d7464b2d854bdec61dcec.setIcon(icon_bd14b5a80475f70d674e1de10dd8a3e3);
+        
+    
+        var popup_ce39795f4bf7f894832cdcbdb6779789 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_32cac0a9973df9ac5ceb1375dfb4fa8c = $(`<div id="html_32cac0a9973df9ac5ceb1375dfb4fa8c" style="width: 100.0%; height: 100.0%;">Central african republic: floods - aug 2024 (flood)</div>`)[0];
+                popup_ce39795f4bf7f894832cdcbdb6779789.setContent(html_32cac0a9973df9ac5ceb1375dfb4fa8c);
+            
+        
+
+        marker_94ab2fb55b2d7464b2d854bdec61dcec.bindPopup(popup_ce39795f4bf7f894832cdcbdb6779789)
+        ;
+
+        
+    
+    
+            var marker_ff03098f15fe82f6df750927d25915e9 = L.marker(
+                [-85.9882, 65.8195],
+                {
+}
+            ).addTo(map_1adbae0061dcdb75f2fe4a69f3df22a4);
+        
+    
+            var icon_666b95b9972ad69aa9db2ce9cbcdda35 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ff03098f15fe82f6df750927d25915e9.setIcon(icon_666b95b9972ad69aa9db2ce9cbcdda35);
+        
+    
+        var popup_f891b587d37f1fe5ae58992ebc6878a1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_33fd1f207b57a843c958acc6396e7ed4 = $(`<div id="html_33fd1f207b57a843c958acc6396e7ed4" style="width: 100.0%; height: 100.0%;">Chad: floods - aug 2024 (flood)</div>`)[0];
+                popup_f891b587d37f1fe5ae58992ebc6878a1.setContent(html_33fd1f207b57a843c958acc6396e7ed4);
+            
+        
+
+        marker_ff03098f15fe82f6df750927d25915e9.bindPopup(popup_f891b587d37f1fe5ae58992ebc6878a1)
+        ;
+
+        
+    
+    
+            var marker_010414a1989e888dfd28c5a207071b3a = L.marker(
+                [-27.4869, 67.6727],
+                {
+}
+            ).addTo(map_1adbae0061dcdb75f2fe4a69f3df22a4);
+        
+    
+            var icon_ccc6987b515efac2436652ce210ac003 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_010414a1989e888dfd28c5a207071b3a.setIcon(icon_ccc6987b515efac2436652ce210ac003);
+        
+    
+        var popup_b64df45d790c6f3502243f870c39bc4b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b2de167ba8251de6207fdc004d3e6362 = $(`<div id="html_b2de167ba8251de6207fdc004d3e6362" style="width: 100.0%; height: 100.0%;">Guinea: floods - jul 2024 (flood)</div>`)[0];
+                popup_b64df45d790c6f3502243f870c39bc4b.setContent(html_b2de167ba8251de6207fdc004d3e6362);
+            
+        
+
+        marker_010414a1989e888dfd28c5a207071b3a.bindPopup(popup_b64df45d790c6f3502243f870c39bc4b)
+        ;
+
+        
+    
+    
+            var marker_d6c87dcf0cbc90458172992b0cbeedfa = L.marker(
+                [-18.3577, 153.405],
+                {
+}
+            ).addTo(map_1adbae0061dcdb75f2fe4a69f3df22a4);
+        
+    
+            var icon_bdc383660fccb4cbacabd47e0448a1bc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_d6c87dcf0cbc90458172992b0cbeedfa.setIcon(icon_bdc383660fccb4cbacabd47e0448a1bc);
+        
+    
+        var popup_49e2ad90ffa092bf376dc0b2b90ab102 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d2b787bf481cc5badf3f7cc919d74f1f = $(`<div id="html_d2b787bf481cc5badf3f7cc919d74f1f" style="width: 100.0%; height: 100.0%;">Sudan: floods - jul 2024 (flood)</div>`)[0];
+                popup_49e2ad90ffa092bf376dc0b2b90ab102.setContent(html_d2b787bf481cc5badf3f7cc919d74f1f);
+            
+        
+
+        marker_d6c87dcf0cbc90458172992b0cbeedfa.bindPopup(popup_49e2ad90ffa092bf376dc0b2b90ab102)
+        ;
+
+        
+    
+    
+            var marker_00e0291d3482282d3b260782218c594d = L.marker(
+                [-11.4134, -34.3499],
+                {
+}
+            ).addTo(map_1adbae0061dcdb75f2fe4a69f3df22a4);
+        
+    
+            var icon_759b4375e2d49357ff922002afb76762 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_00e0291d3482282d3b260782218c594d.setIcon(icon_759b4375e2d49357ff922002afb76762);
+        
+    
+        var popup_3f9b76e1f4318943164fa5a1e13ed2c9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_44b33e3993dfb842a63ce62c253e370f = $(`<div id="html_44b33e3993dfb842a63ce62c253e370f" style="width: 100.0%; height: 100.0%;">Bolivia: wild fires - jul 2024 (Unknown)</div>`)[0];
+                popup_3f9b76e1f4318943164fa5a1e13ed2c9.setContent(html_44b33e3993dfb842a63ce62c253e370f);
+            
+        
+
+        marker_00e0291d3482282d3b260782218c594d.bindPopup(popup_3f9b76e1f4318943164fa5a1e13ed2c9)
+        ;
+
+        
+    
+    
+            var marker_359b5c5c3c3cd80ff609f76673b8b32b = L.marker(
+                [38.3653, -53.2974],
+                {
+}
+            ).addTo(map_1adbae0061dcdb75f2fe4a69f3df22a4);
+        
+    
+            var icon_38b6d7fefca1702e3eeb3c5d85e112ef = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_359b5c5c3c3cd80ff609f76673b8b32b.setIcon(icon_38b6d7fefca1702e3eeb3c5d85e112ef);
+        
+    
+        var popup_7fb9916f5d80c7392b6c3946506cd5ed = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7bf5475c3f79da48bd0d7bf437477262 = $(`<div id="html_7bf5475c3f79da48bd0d7bf437477262" style="width: 100.0%; height: 100.0%;">Mali: floods - jul 2024 (flood)</div>`)[0];
+                popup_7fb9916f5d80c7392b6c3946506cd5ed.setContent(html_7bf5475c3f79da48bd0d7bf437477262);
+            
+        
+
+        marker_359b5c5c3c3cd80ff609f76673b8b32b.bindPopup(popup_7fb9916f5d80c7392b6c3946506cd5ed)
+        ;
+
+        
+    
+    
+            var marker_3521eae7023be1bea3fb2f53d16ad2f3 = L.marker(
+                [21.6607, -163.501],
+                {
+}
+            ).addTo(map_1adbae0061dcdb75f2fe4a69f3df22a4);
+        
+    
+            var icon_1c26424052eeac8e6928d770fd44bc99 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_3521eae7023be1bea3fb2f53d16ad2f3.setIcon(icon_1c26424052eeac8e6928d770fd44bc99);
+        
+    
+        var popup_9610cc3899b67a142c39b4479062542b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a4347e0d3d737a42e073f8a1679e861f = $(`<div id="html_a4347e0d3d737a42e073f8a1679e861f" style="width: 100.0%; height: 100.0%;">Myanmar: floods - jul 2024 (flood)</div>`)[0];
+                popup_9610cc3899b67a142c39b4479062542b.setContent(html_a4347e0d3d737a42e073f8a1679e861f);
+            
+        
+
+        marker_3521eae7023be1bea3fb2f53d16ad2f3.bindPopup(popup_9610cc3899b67a142c39b4479062542b)
+        ;
+
+        
+    
+    
+            var marker_12a521d8c8f901bd96d91ed021226d09 = L.marker(
+                [-23.7335, 73.1663],
+                {
+}
+            ).addTo(map_1adbae0061dcdb75f2fe4a69f3df22a4);
+        
+    
+            var icon_ed918eee3c862dbcf11643fb4bc2c4b3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_12a521d8c8f901bd96d91ed021226d09.setIcon(icon_ed918eee3c862dbcf11643fb4bc2c4b3);
+        
+    
+        var popup_29cf2e6fd96e8101cae25cc4fc5ecbe0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_23f8709c0a42a2a8335f92e3de040757 = $(`<div id="html_23f8709c0a42a2a8335f92e3de040757" style="width: 100.0%; height: 100.0%;">Hurricane beryl - jun 2024 (cyclone)</div>`)[0];
+                popup_29cf2e6fd96e8101cae25cc4fc5ecbe0.setContent(html_23f8709c0a42a2a8335f92e3de040757);
+            
+        
+
+        marker_12a521d8c8f901bd96d91ed021226d09.bindPopup(popup_29cf2e6fd96e8101cae25cc4fc5ecbe0)
+        ;
+
+        
+    
+    
+            var marker_97cd9f20e4a9e936c607a644495d6844 = L.marker(
+                [-15.8836, 161.665],
+                {
+}
+            ).addTo(map_1adbae0061dcdb75f2fe4a69f3df22a4);
+        
+    
+            var icon_a232a07a09fb062367f3729edb06b923 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_97cd9f20e4a9e936c607a644495d6844.setIcon(icon_a232a07a09fb062367f3729edb06b923);
+        
+    
+        var popup_3840213f6f3faa13f3331c08bfc35b6d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0173a66d9f918f1aff9fc57f5a01a7fa = $(`<div id="html_0173a66d9f918f1aff9fc57f5a01a7fa" style="width: 100.0%; height: 100.0%;">Bangladesh: floods and landslides - jun 2024 (flood)</div>`)[0];
+                popup_3840213f6f3faa13f3331c08bfc35b6d.setContent(html_0173a66d9f918f1aff9fc57f5a01a7fa);
+            
+        
+
+        marker_97cd9f20e4a9e936c607a644495d6844.bindPopup(popup_3840213f6f3faa13f3331c08bfc35b6d)
+        ;
+
+        
+    
+    
+            var marker_a11341419df3563e31567a7db786e83f = L.marker(
+                [1.8135, 73.1397],
+                {
+}
+            ).addTo(map_1adbae0061dcdb75f2fe4a69f3df22a4);
+        
+    
+            var icon_7421a919cda8131053a0266b4b33737a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_a11341419df3563e31567a7db786e83f.setIcon(icon_7421a919cda8131053a0266b4b33737a);
+        
+    
+        var popup_4466a3f2db1e581673fa571eb84583e1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7769528df8828b088529290bafe6293c = $(`<div id="html_7769528df8828b088529290bafe6293c" style="width: 100.0%; height: 100.0%;">Liberia: floods - jun 2024 (flood)</div>`)[0];
+                popup_4466a3f2db1e581673fa571eb84583e1.setContent(html_7769528df8828b088529290bafe6293c);
+            
+        
+
+        marker_a11341419df3563e31567a7db786e83f.bindPopup(popup_4466a3f2db1e581673fa571eb84583e1)
+        ;
+
+        
+    
+    
+            var marker_6072634ed9d132769d489e0ea960d231 = L.marker(
+                [87.4088, 114.669],
+                {
+}
+            ).addTo(map_1adbae0061dcdb75f2fe4a69f3df22a4);
+        
+    
+            var icon_6c652c935e14d7f4665b5ac138d7614e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_6072634ed9d132769d489e0ea960d231.setIcon(icon_6c652c935e14d7f4665b5ac138d7614e);
+        
+    
+        var popup_be5364ec23c721e805eefec0eb6fb0a7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_da453ca7cd42e94a36b67ea4de100f83 = $(`<div id="html_da453ca7cd42e94a36b67ea4de100f83" style="width: 100.0%; height: 100.0%;">Niger: floods - jun 2024 (flood)</div>`)[0];
+                popup_be5364ec23c721e805eefec0eb6fb0a7.setContent(html_da453ca7cd42e94a36b67ea4de100f83);
+            
+        
+
+        marker_6072634ed9d132769d489e0ea960d231.bindPopup(popup_be5364ec23c721e805eefec0eb6fb0a7)
+        ;
+
+        
+    
+    
+            var marker_5df3323bc4a0f95c2f057126ca70abaf = L.marker(
+                [-65.5543, -99.5496],
+                {
+}
+            ).addTo(map_1adbae0061dcdb75f2fe4a69f3df22a4);
+        
+    
+            var icon_bda41700040672c32967e8271fce6338 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_5df3323bc4a0f95c2f057126ca70abaf.setIcon(icon_bda41700040672c32967e8271fce6338);
+        
+    
+        var popup_dd07ace3e6454027503cde787886005f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fb4bfdf6cd100e7be0d2747532c08c78 = $(`<div id="html_fb4bfdf6cd100e7be0d2747532c08c78" style="width: 100.0%; height: 100.0%;">Burkina faso: floods - may 2024 (flood)</div>`)[0];
+                popup_dd07ace3e6454027503cde787886005f.setContent(html_fb4bfdf6cd100e7be0d2747532c08c78);
+            
+        
+
+        marker_5df3323bc4a0f95c2f057126ca70abaf.bindPopup(popup_dd07ace3e6454027503cde787886005f)
+        ;
+
+        
+    
+    
+            var marker_71baa44f6c85276c4cd7e85f3f0c626b = L.marker(
+                [37.7888, 136.537],
+                {
+}
+            ).addTo(map_1adbae0061dcdb75f2fe4a69f3df22a4);
+        
+    
+            var icon_58f33afff5a427d3a1546770022ecb0d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_71baa44f6c85276c4cd7e85f3f0c626b.setIcon(icon_58f33afff5a427d3a1546770022ecb0d);
+        
+    
+        var popup_b892bd1086e7b7cf57e215b296d4cccf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_adf8e119e2141f31fd33262aa1d92b19 = $(`<div id="html_adf8e119e2141f31fd33262aa1d92b19" style="width: 100.0%; height: 100.0%;">Namibia: drought - may 2024 (drought)</div>`)[0];
+                popup_b892bd1086e7b7cf57e215b296d4cccf.setContent(html_adf8e119e2141f31fd33262aa1d92b19);
+            
+        
+
+        marker_71baa44f6c85276c4cd7e85f3f0c626b.bindPopup(popup_b892bd1086e7b7cf57e215b296d4cccf)
+        ;
+
+        
+    
+    
+            var marker_283a6ed252aa245d3d3d04e8af75cb67 = L.marker(
+                [-42.023, 70.1574],
+                {
+}
+            ).addTo(map_1adbae0061dcdb75f2fe4a69f3df22a4);
+        
+    
+            var icon_61c5ad895ad97b551826534971af3205 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_283a6ed252aa245d3d3d04e8af75cb67.setIcon(icon_61c5ad895ad97b551826534971af3205);
+        
+    
+        var popup_c58208cb3a0465fef893c1504937aaf9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a4762061e4704adfb4f7a378a09d3d8f = $(`<div id="html_a4762061e4704adfb4f7a378a09d3d8f" style="width: 100.0%; height: 100.0%;">Uganda: floods - may 2024 (flood)</div>`)[0];
+                popup_c58208cb3a0465fef893c1504937aaf9.setContent(html_a4762061e4704adfb4f7a378a09d3d8f);
+            
+        
+
+        marker_283a6ed252aa245d3d3d04e8af75cb67.bindPopup(popup_c58208cb3a0465fef893c1504937aaf9)
+        ;
+
+        
+    
+    
+            var marker_734d837a09efabc8edf28f5dc1bcf74c = L.marker(
+                [31.4627, -75.8454],
+                {
+}
+            ).addTo(map_1adbae0061dcdb75f2fe4a69f3df22a4);
+        
+    
+            var icon_968d13f1ebd856cdd768dd8be1d1c963 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_734d837a09efabc8edf28f5dc1bcf74c.setIcon(icon_968d13f1ebd856cdd768dd8be1d1c963);
+        
+    
+        var popup_84c5e3ce4e374dfbecc7a114199ad55a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_81e17408f04f5c657a33d3aeff41d946 = $(`<div id="html_81e17408f04f5c657a33d3aeff41d946" style="width: 100.0%; height: 100.0%;">Lesotho: drought - apr 2024 (drought)</div>`)[0];
+                popup_84c5e3ce4e374dfbecc7a114199ad55a.setContent(html_81e17408f04f5c657a33d3aeff41d946);
+            
+        
+
+        marker_734d837a09efabc8edf28f5dc1bcf74c.bindPopup(popup_84c5e3ce4e374dfbecc7a114199ad55a)
+        ;
+
+        
+    
+    
+            var marker_2ba2faae6dfd5e1c94f2dd812eabf1ff = L.marker(
+                [-14.0016, -92.4797],
+                {
+}
+            ).addTo(map_1adbae0061dcdb75f2fe4a69f3df22a4);
+        
+    
+            var icon_bb7be3d8decd0448d20218224c622618 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_2ba2faae6dfd5e1c94f2dd812eabf1ff.setIcon(icon_bb7be3d8decd0448d20218224c622618);
+        
+    
+        var popup_f606bac897186bf9879bbf9652a25732 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7e3e0407056effda91c5909368ee539a = $(`<div id="html_7e3e0407056effda91c5909368ee539a" style="width: 100.0%; height: 100.0%;">Somalia: floods - apr 2024 (flood)</div>`)[0];
+                popup_f606bac897186bf9879bbf9652a25732.setContent(html_7e3e0407056effda91c5909368ee539a);
+            
+        
+
+        marker_2ba2faae6dfd5e1c94f2dd812eabf1ff.bindPopup(popup_f606bac897186bf9879bbf9652a25732)
+        ;
+
+        
+    
+    
+            var marker_8b79bc6c6ea284677049d6c81d6a2d91 = L.marker(
+                [80.8055, -174.506],
+                {
+}
+            ).addTo(map_1adbae0061dcdb75f2fe4a69f3df22a4);
+        
+    
+            var icon_73450dc3c5576fabf139dc24d955d693 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_8b79bc6c6ea284677049d6c81d6a2d91.setIcon(icon_73450dc3c5576fabf139dc24d955d693);
+        
+    
+        var popup_7ad353454652374a84387af0b4ee17ca = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2dffda258e8b1a643033cbd3f190a2a9 = $(`<div id="html_2dffda258e8b1a643033cbd3f190a2a9" style="width: 100.0%; height: 100.0%;">Yemen: floods - apr 2024 (flood)</div>`)[0];
+                popup_7ad353454652374a84387af0b4ee17ca.setContent(html_2dffda258e8b1a643033cbd3f190a2a9);
+            
+        
+
+        marker_8b79bc6c6ea284677049d6c81d6a2d91.bindPopup(popup_7ad353454652374a84387af0b4ee17ca)
+        ;
+
+        
+    
+    
+            var marker_99a374d2de46a57ae1070cfaf63cbc07 = L.marker(
+                [-48.6808, -143.291],
+                {
+}
+            ).addTo(map_1adbae0061dcdb75f2fe4a69f3df22a4);
+        
+    
+            var icon_2cd8ed0bd2e48ada3cf7e3ae99cf518f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_99a374d2de46a57ae1070cfaf63cbc07.setIcon(icon_2cd8ed0bd2e48ada3cf7e3ae99cf518f);
+        
+    
+        var popup_e8b666541286b32ab99b69e015b02540 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2c910972a1c06a742ee152d6b1fb5093 = $(`<div id="html_2c910972a1c06a742ee152d6b1fb5093" style="width: 100.0%; height: 100.0%;">Zimbabwe: drought - apr 2024 (drought)</div>`)[0];
+                popup_e8b666541286b32ab99b69e015b02540.setContent(html_2c910972a1c06a742ee152d6b1fb5093);
+            
+        
+
+        marker_99a374d2de46a57ae1070cfaf63cbc07.bindPopup(popup_e8b666541286b32ab99b69e015b02540)
+        ;
+
+        
+    
+    
+            var marker_3abe38cb2fbe2f69b09ae546ed5e050b = L.marker(
+                [57.8152, 108.024],
+                {
+}
+            ).addTo(map_1adbae0061dcdb75f2fe4a69f3df22a4);
+        
+    
+            var icon_4978355ec453aef18b9138532316892d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_3abe38cb2fbe2f69b09ae546ed5e050b.setIcon(icon_4978355ec453aef18b9138532316892d);
+        
+    
+        var popup_d182741a536b8442229699343f018cc7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b104854ec1d70e29cc2fe7acd44e72b9 = $(`<div id="html_b104854ec1d70e29cc2fe7acd44e72b9" style="width: 100.0%; height: 100.0%;">Malawi: drought - mar 2024 (drought)</div>`)[0];
+                popup_d182741a536b8442229699343f018cc7.setContent(html_b104854ec1d70e29cc2fe7acd44e72b9);
+            
+        
+
+        marker_3abe38cb2fbe2f69b09ae546ed5e050b.bindPopup(popup_d182741a536b8442229699343f018cc7)
+        ;
+
+        
+    
+    
+            var marker_2733bc68261937e2dc279353dafe429f = L.marker(
+                [6.61551, -77.9181],
+                {
+}
+            ).addTo(map_1adbae0061dcdb75f2fe4a69f3df22a4);
+        
+    
+            var icon_a0f3163d0d3cda8de1831f792d90ffcb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_2733bc68261937e2dc279353dafe429f.setIcon(icon_a0f3163d0d3cda8de1831f792d90ffcb);
+        
+    
+        var popup_a03b9a123399ccf1c8867740d391d2cf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_178767e53669f8eeca93f9ea6aaaaea4 = $(`<div id="html_178767e53669f8eeca93f9ea6aaaaea4" style="width: 100.0%; height: 100.0%;">Afghanistan: floods - mar 2024 (flood)</div>`)[0];
+                popup_a03b9a123399ccf1c8867740d391d2cf.setContent(html_178767e53669f8eeca93f9ea6aaaaea4);
+            
+        
+
+        marker_2733bc68261937e2dc279353dafe429f.bindPopup(popup_a03b9a123399ccf1c8867740d391d2cf)
+        ;
+
+        
+    
+    
+            var marker_f0857a844a7c2cc59c3b43da0255b031 = L.marker(
+                [55.3583, -112.663],
+                {
+}
+            ).addTo(map_1adbae0061dcdb75f2fe4a69f3df22a4);
+        
+    
+            var icon_a270929b923aaf921dcdcb0c20d1e9e3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_f0857a844a7c2cc59c3b43da0255b031.setIcon(icon_a270929b923aaf921dcdcb0c20d1e9e3);
+        
+    
+        var popup_43f3ce7bd450ad2952a118ea6d22d154 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cc48c18fce9e2666d8b569fff0f56d85 = $(`<div id="html_cc48c18fce9e2666d8b569fff0f56d85" style="width: 100.0%; height: 100.0%;">Zambia: drought - jan 2024 (drought)</div>`)[0];
+                popup_43f3ce7bd450ad2952a118ea6d22d154.setContent(html_cc48c18fce9e2666d8b569fff0f56d85);
+            
+        
+
+        marker_f0857a844a7c2cc59c3b43da0255b031.bindPopup(popup_43f3ce7bd450ad2952a118ea6d22d154)
+        ;
+
+        
+    
+    
+            var marker_ee4094bc7ed9936017a2f7282401147c = L.marker(
+                [2.26793, -179.332],
+                {
+}
+            ).addTo(map_1adbae0061dcdb75f2fe4a69f3df22a4);
+        
+    
+            var icon_16e82edffb28083b9f5a65b429f1dde8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_ee4094bc7ed9936017a2f7282401147c.setIcon(icon_16e82edffb28083b9f5a65b429f1dde8);
+        
+    
+        var popup_dee80b82a956da808cbb3a67800a4bc4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fee49afbcb5998f0239ed5ba3e3f6a03 = $(`<div id="html_fee49afbcb5998f0239ed5ba3e3f6a03" style="width: 100.0%; height: 100.0%;">Mongolia: dzud - dec 2023 (outbreak)</div>`)[0];
+                popup_dee80b82a956da808cbb3a67800a4bc4.setContent(html_fee49afbcb5998f0239ed5ba3e3f6a03);
+            
+        
+
+        marker_ee4094bc7ed9936017a2f7282401147c.bindPopup(popup_dee80b82a956da808cbb3a67800a4bc4)
+        ;
+
+        
+    
+    
+            var marker_afcb3a3a9a596087fe6b23fde58eecd7 = L.marker(
+                [-5.13382, -53.3421],
+                {
+}
+            ).addTo(map_1adbae0061dcdb75f2fe4a69f3df22a4);
+        
+    
+            var icon_1ec5ae280e8794406abcbaf950d38f77 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_afcb3a3a9a596087fe6b23fde58eecd7.setIcon(icon_1ec5ae280e8794406abcbaf950d38f77);
+        
+    
+        var popup_ad273145dd19967782b7a5b8845b9a12 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6348334b8afea77375d54b10f93afba3 = $(`<div id="html_6348334b8afea77375d54b10f93afba3" style="width: 100.0%; height: 100.0%;">Tanzania: cholera outbreak - jul 2023 (outbreak)</div>`)[0];
+                popup_ad273145dd19967782b7a5b8845b9a12.setContent(html_6348334b8afea77375d54b10f93afba3);
+            
+        
+
+        marker_afcb3a3a9a596087fe6b23fde58eecd7.bindPopup(popup_ad273145dd19967782b7a5b8845b9a12)
+        ;
+
+        
+    
+    
+            var marker_50c95423186b18b69f28309a034b83ba = L.marker(
+                [-27.9539, 60.4874],
+                {
+}
+            ).addTo(map_1adbae0061dcdb75f2fe4a69f3df22a4);
+        
+    
+            var icon_4636f456282e9c20fc1bae83c129b626 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_50c95423186b18b69f28309a034b83ba.setIcon(icon_4636f456282e9c20fc1bae83c129b626);
+        
+    
+        var popup_17bc7f8f813f95aaaf9d63995b415a85 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_99541caaefebb01b85125644c760d563 = $(`<div id="html_99541caaefebb01b85125644c760d563" style="width: 100.0%; height: 100.0%;">Dr congo: cholera and measles outbreaks - jan 2013 (outbreak)</div>`)[0];
+                popup_17bc7f8f813f95aaaf9d63995b415a85.setContent(html_99541caaefebb01b85125644c760d563);
+            
+        
+
+        marker_50c95423186b18b69f28309a034b83ba.bindPopup(popup_17bc7f8f813f95aaaf9d63995b415a85)
+        ;
+
+        
+    
+    
+            var marker_b7d05a969552a84e653f7e73914e8a43 = L.marker(
+                [-34.9198, 9.34012],
+                {
+}
+            ).addTo(map_1adbae0061dcdb75f2fe4a69f3df22a4);
+        
+    
+            var icon_e7af66de4ae9d786e383fcb05dfe0cb3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_b7d05a969552a84e653f7e73914e8a43.setIcon(icon_e7af66de4ae9d786e383fcb05dfe0cb3);
+        
+    
+        var popup_727122bb941e64565e27fb8174bfd3d0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_31c4d95b215fd3def343e09dc00c7014 = $(`<div id="html_31c4d95b215fd3def343e09dc00c7014" style="width: 100.0%; height: 100.0%;">Typhoon man-yi - nov 2024 (cyclone)</div>`)[0];
+                popup_727122bb941e64565e27fb8174bfd3d0.setContent(html_31c4d95b215fd3def343e09dc00c7014);
+            
+        
+
+        marker_b7d05a969552a84e653f7e73914e8a43.bindPopup(popup_727122bb941e64565e27fb8174bfd3d0)
+        ;
+
+        
+    
+    
+            var marker_3bf88f4a937ab9ab35d2ffc384edd35a = L.marker(
+                [38.1096, 173.076],
+                {
+}
+            ).addTo(map_1adbae0061dcdb75f2fe4a69f3df22a4);
+        
+    
+            var icon_a3e4cf2dff585076a2b6e62b8d24cf05 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_3bf88f4a937ab9ab35d2ffc384edd35a.setIcon(icon_a3e4cf2dff585076a2b6e62b8d24cf05);
+        
+    
+        var popup_dd6f8545b40fa2a51908fd6b5b4a8795 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d6af294f7d2a92a1333626e1bca584da = $(`<div id="html_d6af294f7d2a92a1333626e1bca584da" style="width: 100.0%; height: 100.0%;">Hurricane rafael - nov 2024 (cyclone)</div>`)[0];
+                popup_dd6f8545b40fa2a51908fd6b5b4a8795.setContent(html_d6af294f7d2a92a1333626e1bca584da);
+            
+        
+
+        marker_3bf88f4a937ab9ab35d2ffc384edd35a.bindPopup(popup_dd6f8545b40fa2a51908fd6b5b4a8795)
+        ;
+
+        
+    
+    
+            var marker_8d68d2f15505a795737b17d33d4d6f21 = L.marker(
+                [48.3606, 144.378],
+                {
+}
+            ).addTo(map_1adbae0061dcdb75f2fe4a69f3df22a4);
+        
+    
+            var icon_e36c583c22a37fb2291f81b8a53c63c2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+            marker_8d68d2f15505a795737b17d33d4d6f21.setIcon(icon_e36c583c22a37fb2291f81b8a53c63c2);
+        
+    
+        var popup_cc2fbc71cb71ead80d0ab1ea6c52ad57 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_444cc191f7500331820a2bf2751d99c5 = $(`<div id="html_444cc191f7500331820a2bf2751d99c5" style="width: 100.0%; height: 100.0%;">quake (skhis)</div>`)[0];
+                popup_cc2fbc71cb71ead80d0ab1ea6c52ad57.setContent(html_444cc191f7500331820a2bf2751d99c5);
+            
+        
+
+        marker_8d68d2f15505a795737b17d33d4d6f21.bindPopup(popup_cc2fbc71cb71ead80d0ab1ea6c52ad57)
+        ;
+
+        
+    
+</script>
+</html>

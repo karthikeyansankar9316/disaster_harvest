@@ -1,0 +1,11 @@
+<h2>Sign Up</h2>
+<form method="post">
+    {% csrf_token %}
+    <h3>Citizen</h3>
+    {{ citizen_form.as_p }}
+    <button type="submit" name="citizen">Sign Up as Citizen</button>
+
+    <h3>Agency</h3>
+    {{ agency_form.as_p }}
+    <button type="submit" name="agency">Sign Up as Agency</button>
+</form>

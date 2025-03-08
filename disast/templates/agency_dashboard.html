@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}
+    Welcome, {{ request.user.username }} - Agency Dashboard
+{% endblock %}
+
+{% block content %}
+<div id="main-content" class="container mt-4">
+
+    <!-- Welcome Message -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1>Welcome, {{ request.user.username }}!</h1>  <!-- Personalized welcome message -->
+        <a href="{% url 'logout' %}" class="btn btn-danger">Sign Out</a>
+    </div>
+
+    <!-- Disaster Map Section (Moved below welcome message) -->
+    <div class="container mt-5">
+        <h2>Locate Disasters</h2>
+        <p>Visualizing disaster locations and high-risk zones.</p>
+        
+        <div class="map-container">
+            <iframe src="{% static 'maps/disaster_map.html' %}" width="100%" height="600px" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <!-- Cluster Centers Section (Moved below the map) -->
+    {% if clusters %}
+    <div class="mt-4">
+        <h3>Cluster Centers</h3>
+        <ul>
+            {% for cluster in clusters %}
+            <li>Latitude: {{ cluster.0 }}, Longitude: {{ cluster.1 }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endif %}
+
+    <!-- Your Disasters Table -->
+    <a href="{% url 'add_disaster' %}" class="btn btn-primary mb-4">Add Disaster</a>
+
+    <h2>Latest Disasters</h2>
+    {% if disasters %}
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Category</th>
+                <th>Severity</th>
+                <th>Date</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for disaster in disasters %}
+            <tr>
+                <td>{{ disaster.title }}</td>
+                <td>{{ disaster.category|default:"Unknown" }}</td>
+                <td>{{ disaster.severity|default:"Medium" }}</td>
+                <td>{{ disaster.date|default:"Unknown" }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% else %}
+    <p>No disasters found. Use the "Add Disaster" button above to create one.</p>
+    {% endif %}
+</div>
+{% endblock %}
